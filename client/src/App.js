@@ -2,7 +2,7 @@ import './App.css';
 import io from 'socket.io-client';
 import { useState, useEffect } from 'react'
 
-const socket = io('http://localhost:4000' || 'https://react-socketio-vive-fest.vercel.app/')
+const socket = io('http://localhost:4000' || 'https://vive-fest-chat.herokuapp.com/')
 
 function App() {
 
