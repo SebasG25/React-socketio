@@ -20,10 +20,11 @@ app.use(cors())
 app.use(morgan('dev'))
 
 io.on('connection', (socket) => {
-    socket.on('message', (message) => {
+    socket.on('message', (message, username) => {
         socket.broadcast.emit('message', {
             body: message,
-            from: socket.id
+            from: username,
+            id: socket.id
         })
     })
 })
