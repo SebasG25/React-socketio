@@ -41,10 +41,10 @@ function App() {
 
   return (
 
-    <div className="h-screen bg-zinc-800 text-white flex items-center justify-center flex-col">
+    <div className="h-screen bg-zinc-800 text-white flex items-center justify-center flex-col app-background">
       <input className='border-2 border-zinc-500 p-2 text-black w-80 m-5' type="text" onChange={e => setUsername(e.target.value)} value={username} placeholder='Ingresa tu nombre' />
       <form onSubmit={handleSubmit} className='bg-zinc-900 w-80 p-10'>
-        <h1 className='text-2xl font-bold my-2'>Chat React</h1>
+        <h1 className='text-2xl font-bold my-2'>Chat Vive Fest</h1>
         <input className='border-2 border-zinc-500 p-2 text-black w-full' type="text" onChange={e => setMessage(e.target.value)} value={message} placeholder='Ingresa un mensaje' />
         <ul className='h-80 overflow-y-auto'>
           {messages && messages.map((message, index) => (
